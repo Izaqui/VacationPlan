@@ -18,7 +18,7 @@ function ListComp({ vacations, deleteVacation }) {
     updatedVacations[editingIndex] = editedVacation;
 
     saveData(updatedVacations);
-    setEditMessage('Edições salvas com sucesso.');
+    setEditMessage('Sucess.');
     setEditingIndex(null);
     setEditedVacation({});
     setTimeout(() => {

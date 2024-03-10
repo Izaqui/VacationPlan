@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import FormComp from './components/FormComp';
 import ListComp from './components/ListComp';
+import './App.css'
+import logo from './assets/Logo.png'
 
 function App() {
   const [vacations, setVacations] = useState([]);
@@ -17,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Vacation Plan Manager</h1>
+      <img src={logo} alt="vacation" />
       <FormComp addVacatioData={addVacatioData} />
       <ListComp vacations={vacations} deleteVacation={deleteVacation} />
     </div>
