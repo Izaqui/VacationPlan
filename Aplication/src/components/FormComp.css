@@ -1,0 +1,29 @@
+.formStyles {
+    display: grid;
+}
+
+.formStyles input {
+    padding: 0.2rem;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+    width: 35rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.formStyles button {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) { 
+    .formStyles {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin-right: 0;
+    }
+
+    .formStyles input {
+        width: 100%; 
+    }
+}

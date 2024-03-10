@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FormComp.css';
 
 function FormComp({ addVacatioData }) {
   const [title, setTitle] = useState('');
@@ -22,7 +23,7 @@ function FormComp({ addVacatioData }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='formStyles' onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Title"
